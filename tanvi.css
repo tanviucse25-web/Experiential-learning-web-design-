@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e6eef7, #ffffff) url("https://media.istockphoto.com/id/1190147404/photo/cup-of-coffee-and-laptop-on-the-table.jpg?s=612x612&w=0&k=20&c=K0wz1IuvYXXzLkvcETDqBnnPHYjAjXBxzhGD4MgXI2Q=");
+  margin:0;
+}
+
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-bar {
+  text-align: center;
+  background: #333;
+  padding: 10px;
+}
+
+.nav-bar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+
+.card {
+  width: 420px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+.tab-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #eee;
+  margin-right: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#tab-cc:checked + label,
+#tab-nb:checked + label {
+  background: #3b82f6;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 15px;
+}
+
+#tab-cc:checked ~ .cc-content {
+  display: block;
+}
+
+#tab-nb:checked ~ .nb-content {
+  display: block;
+}
+
+.two-col {
+  display: flex;
+  gap: 10px;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #4CAF50, #2e7d32);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.popup{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:30px;
+border-radius:15px;
+width:300px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+display:none;
+z-index:100;
+}
+
+.check{
+font-size:30px;
+background:#4CAF50;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+line-height:60px;
+margin:auto;
+margin-bottom:10px;
+}
