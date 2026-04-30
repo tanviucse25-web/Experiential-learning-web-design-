@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Registration</title>
+
+
+</head>
+<link rel="stylesheet" href="tanvi.css">
+<body>
+
+<header class="page-header">
+  <h1>Workshop Registration</h1>
+  <p>Complete your registration and choose a payment method.</p>
+</header>
+
+<nav class="nav-bar">
+  <a href="#">Registration</a>
+  <a href="#">Payment</a>
+  <a href="#">Support</a>
+</nav>
+
+<div class="card">
+  <h2>Step 3: Payment Details</h2>
+
+  <form onsubmit="validateForm(event)">
+
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <h3>Choose Payment Method</h3>
+
+    <div class="tabs">
+
+      <input type="radio" id="tab-cc" name="tab" checked>
+      <label for="tab-cc" class="tab-label">Credit Card</label>
+
+      <input type="radio" id="tab-nb" name="tab">
+      <label for="tab-nb" class="tab-label">Net Banking</label>
+
+      
+      <div class="tab-content cc-content">
+        <label>Card Number</label>
+        <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+
+        <div class="two-col">
+          <div>
+            <label>Expiry Date</label>
+            <input type="text" placeholder="MM/YY">
+          </div>
+          <div>
+            <label>CVV</label>
+            <input type="password" placeholder="123">
+          </div>
+        </div>
+
+        <label>Name on Card</label>
+        <input type="text" placeholder="Cardholder name">
+      </div>
+
+      
+      <div class="tab-content nb-content">
+        <label>Select Bank</label>
+        <select>
+          <option>SBI</option>
+          <option>HDFC</option>
+          <option>ICICI</option>
+        </select>
+
+        <label>User ID</label>
+        <input type="text" placeholder="Enter user ID">
+
+        <label>MPIN</label>
+        <input type="password" placeholder="Enter MPIN">
+      </div>
+
+    </div>
+
+    <br>
+    <button type="submit">Confirm Registration</button>
+
+  </form>
+</div>
+
+
+<div class="popup" id="successPopup">
+  <div class="check">✔</div>
+  <h3>Registration Successful!</h3>
+  <p>Your workshop registration is complete.</p>
+  <button onclick="closePopup()">OK</button>
+</div>
+
+<footer class="page-footer">
+  <p>© 2026 Workshop Registration</p>
+</footer>
+
+
+
+</body>
+</html>
